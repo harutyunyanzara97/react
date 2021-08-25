@@ -11,8 +11,12 @@ class App extends Component {
     this.state= {
         dishes:DISHES
     };
+
     }
-  render() {
+    componentDidMount() {
+    }
+
+    render() {
     return (
         <div>
           <Navbar dark color="primary">
@@ -23,7 +27,8 @@ class App extends Component {
             <Menu dishes={this.state.dishes} />
         </div>
     );
-  }
+    }
+
 }
 
 
